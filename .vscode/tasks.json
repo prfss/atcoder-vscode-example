@@ -1,0 +1,60 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "g++ build with AtCoder Library",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-std=gnu++17",
+                "-g",
+                "-Wall",
+                "-Wconversion",
+                "-fsanitize=address,undefined",
+                "-I${workspaceFolder}/ac-library",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "shell",
+            "label": "g++ build",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-std=gnu++17",
+                "-g",
+                "-Wall",
+                "-Wconversion",
+                "-fsanitize=address,undefined",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "shell",
+            "label": "Expand",
+            "command": "/usr/bin/python3",
+            "args": ["${workspaceFolder}/ac-library/expander.py", "--lib", "${workspaceFolder}/ac-library", "${file}"],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
