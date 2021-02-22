@@ -1,6 +1,6 @@
 # 概要
 
-AtCoder の解答コードを VSCode で書く際の設定例です。言語は C++で AtCoder Library 対応です。また LS として[clangd](https://clangd.llvm.org/)を使います。
+AtCoder の問題の解答コードを VSCode で書く際の設定例です。言語は C++で AtCoder Library 対応です。また Language Server として[clangd](https://clangd.llvm.org/)を使います。
 
 # 準備
 
