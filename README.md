@@ -6,8 +6,7 @@ AtCoder の解答コードを VSCode で書く際の設定例です。言語は 
 
 ## AtCoder Library
 
-1. https://img.atcoder.jp/practice2/ac-library.zip をダウンロードします。
-2. zip を解凍してできた`ac-library`ディレクトリ(直下に`atcoder`ディレクトリを含む)をリポジトリのルートに配置してください。
+リポジトリのルートの直下に https://github.com/atcoder/ac-library をクローンします。
 
 ## clangd
 
