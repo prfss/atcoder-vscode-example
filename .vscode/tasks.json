@@ -24,10 +24,53 @@
         },
         {
             "type": "shell",
+            "label": "g++ build with AtCoder Library (DEBUG)",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-std=gnu++17",
+                "-DDEBUG",
+                "-g",
+                "-Wall",
+                "-Wconversion",
+                "-fsanitize=address,undefined",
+                "-I${workspaceFolder}/ac-library",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "shell",
             "label": "g++ build",
             "command": "/usr/bin/g++",
             "args": [
                 "-std=gnu++17",
+                "-g",
+                "-Wall",
+                "-Wconversion",
+                "-fsanitize=address,undefined",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "shell",
+            "label": "g++ build (DEBUG)",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-std=gnu++17",
+                "-DDEBUG",
                 "-g",
                 "-Wall",
                 "-Wconversion",
