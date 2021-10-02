@@ -15,18 +15,19 @@ AtCoder の問題の解答コードを VSCode で書く際の設定例です。�
 
 # コードを書く
 
-ディレクトリ構成は`practice2`を参考にしてみてください。
-
 1. リポジトリのルートディレクトリを VSCode で開きます。
-2. コンテスト用のディレクトリを作成し、移動します。
-3. ターミナルを開き`code solution.cpp`のようにしてコードを書きます。
-4. 書き終わったら<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>でビルドします。
+2. コンテスト用のディレクトリを作成し、移動します。構成は`practice2`ディレクトリを参考にしてみてください。
+3. コードを書きます。
+4. コードを書き終わったら<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>でビルドします。
 
-    |             ラベル             | 意味                                        | 出力ファイル   |
-    | :----------------------------: | :------------------------------------------ | -------------- |
-    |           g++ build            | ACL なしでビルド                            | `${filename}`  |
-    | g++ build with AtCoder Library | ACL ありでビルド                            | `${filename}`  |
-    |             Expand             | ACL を含めたソースコードを出力(expander.py) | `combined.cpp` |
+    |                 ラベル                 | 意味                                        |  出力ファイル  |
+    | :------------------------------------: | :------------------------------------------ | :------------: |
+    |               g++ build                | ACL なしでビルド                            | `${filename}`  |
+    |           g++ build (DEBUG)            | ACL なし + DEBUG シンボル                   |       〃       |
+    |     g++ build with AtCoder Library     | ACL ありでビルド                            |       〃       |
+    | g++ build with AtCoder Library (DEBUG) | ACL あり + DEBUG シンボル                   |       〃       |
+    |     g++ build (ACL, optimization)      | ACL + O2 最適化                             |       〃       |
+    |                 Expand                 | ACL を含めたソースコードを出力(expander.py) | `combined.cpp` |
 
 # 参考になりそうなリンク
 
