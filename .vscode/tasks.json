@@ -87,6 +87,31 @@
         },
         {
             "type": "shell",
+            "label": "g++ build (ACL, optimization)",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-std=c++17",
+                "-Wall",
+                "-Wconversion",
+                "-I${workspaceFolder}/ac-library",
+                "-O2",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "/usr/bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "shell",
             "label": "Expand",
             "command": "/usr/bin/python3",
             "args": ["${workspaceFolder}/ac-library/expander.py", "--lib", "${workspaceFolder}/ac-library", "${file}"],
