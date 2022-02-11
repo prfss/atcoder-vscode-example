@@ -10,6 +10,7 @@
                 "-g",
                 "-Wall",
                 "-Wconversion",
+                "-Wfatal-errors",
                 "-fsanitize=address,undefined",
                 "-I${workspaceFolder}/ac-library",
                 "${file}",
@@ -32,6 +33,7 @@
                 "-g",
                 "-Wall",
                 "-Wconversion",
+                "-Wfatal-errors",
                 "-fsanitize=address,undefined",
                 "-I${workspaceFolder}/ac-library",
                 "${file}",
@@ -53,6 +55,7 @@
                 "-g",
                 "-Wall",
                 "-Wconversion",
+                "-Wfatal-errors",
                 "-fsanitize=address,undefined",
                 "${file}",
                 "-o",
@@ -74,6 +77,7 @@
                 "-g",
                 "-Wall",
                 "-Wconversion",
+                "-Wfatal-errors",
                 "-fsanitize=address,undefined",
                 "${file}",
                 "-o",
@@ -102,9 +106,7 @@
             "options": {
                 "cwd": "/usr/bin"
             },
-            "problemMatcher": [
-                "$gcc"
-            ],
+            "problemMatcher": ["$gcc"],
             "group": {
                 "kind": "build",
                 "isDefault": true
