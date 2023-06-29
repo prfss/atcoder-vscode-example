@@ -1,1 +1,8 @@
-Checks: "-*,readability-implicit-bool-conversion"
+Checks: '-,
+bugprone-*,
+performance-*,
+readability-*,
+-readability-braces-around-statements,
+-readability-else-after-return,
+-readability-isolate-declaration,
+-readability-identifier-length'
