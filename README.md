@@ -24,7 +24,7 @@ AtCoder の問題の解答コードを VSCode で書く際の設定例です。�
     |     g++ build with AtCoder Library     | ACL ありでビルド                            |       〃       |
     | g++ build with AtCoder Library (DEBUG) | ACL あり + DEBUG シンボル                   |       〃       |
     |     g++ build (ACL, optimization)      | ACL + O2 最適化                             |       〃       |
-    |   clang++ build (ACL, optimization)    | clang++ + ACL + O2 最適化                   |       〃       |
+    |   clang++ build (ACL, optimization)    | ACL + O2 最適化                             |       〃       |
     |                 Expand                 | ACL を含めたソースコードを出力(expander.py) | `combined.cpp` |
 
 # 参考になりそうなリンク
