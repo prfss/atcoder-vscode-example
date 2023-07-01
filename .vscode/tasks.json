@@ -1,130 +1,154 @@
 {
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "type": "shell",
-            "label": "g++ build with AtCoder Library",
-            "command": "/usr/bin/g++",
-            "args": [
-                "-std=gnu++17",
-                "-g",
-                "-Wall",
-                "-Wconversion",
-                "-Wfatal-errors",
-                "-fsanitize=address,undefined",
-                "-I${workspaceFolder}/ac-library",
-                "${file}",
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
-            ],
-            "problemMatcher": [],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        },
-        {
-            "type": "shell",
-            "label": "g++ build with AtCoder Library (DEBUG)",
-            "command": "/usr/bin/g++",
-            "args": [
-                "-std=gnu++17",
-                "-DDEBUG",
-                "-g",
-                "-Wall",
-                "-Wconversion",
-                "-Wfatal-errors",
-                "-fsanitize=address,undefined",
-                "-I${workspaceFolder}/ac-library",
-                "${file}",
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
-            ],
-            "problemMatcher": [],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        },
-        {
-            "type": "shell",
-            "label": "g++ build",
-            "command": "/usr/bin/g++",
-            "args": [
-                "-std=gnu++17",
-                "-g",
-                "-Wall",
-                "-Wconversion",
-                "-Wfatal-errors",
-                "-fsanitize=address,undefined",
-                "${file}",
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
-            ],
-            "problemMatcher": [],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        },
-        {
-            "type": "shell",
-            "label": "g++ build (DEBUG)",
-            "command": "/usr/bin/g++",
-            "args": [
-                "-std=gnu++17",
-                "-DDEBUG",
-                "-g",
-                "-Wall",
-                "-Wconversion",
-                "-Wfatal-errors",
-                "-fsanitize=address,undefined",
-                "${file}",
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
-            ],
-            "problemMatcher": [],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        },
-        {
-            "type": "shell",
-            "label": "g++ build (ACL, optimization)",
-            "command": "/usr/bin/g++",
-            "args": [
-                "-std=c++17",
-                "-Wall",
-                "-Wconversion",
-                "-I${workspaceFolder}/ac-library",
-                "-O2",
-                "${file}",
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
-            ],
-            "options": {
-                "cwd": "/usr/bin"
-            },
-            "problemMatcher": ["$gcc"],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        },
-        {
-            "type": "shell",
-            "label": "Expand",
-            "command": "/usr/bin/python3",
-            "args": ["${workspaceFolder}/ac-library/expander.py", "--lib", "${workspaceFolder}/ac-library", "${file}"],
-            "options": {
-                "cwd": "${fileDirname}"
-            },
-            "problemMatcher": [],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        }
-    ]
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "g++ build with AtCoder Library",
+      "command": "/usr/bin/g++",
+      "args": [
+        "-std=gnu++17",
+        "-g",
+        "-Wall",
+        "-Wfatal-errors",
+        "-fsanitize=address,undefined",
+        "-I${workspaceFolder}/ac-library",
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}"
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "type": "shell",
+      "label": "g++ build with AtCoder Library (DEBUG)",
+      "command": "/usr/bin/g++",
+      "args": [
+        "-std=gnu++17",
+        "-DDEBUG",
+        "-g",
+        "-Wall",
+        "-Wfatal-errors",
+        "-fsanitize=address,undefined",
+        "-I${workspaceFolder}/ac-library",
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}"
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "type": "shell",
+      "label": "g++ build",
+      "command": "/usr/bin/g++",
+      "args": [
+        "-std=gnu++17",
+        "-g",
+        "-Wall",
+        "-Wfatal-errors",
+        "-fsanitize=address,undefined",
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}"
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "type": "shell",
+      "label": "g++ build (DEBUG)",
+      "command": "/usr/bin/g++",
+      "args": [
+        "-std=gnu++17",
+        "-DDEBUG",
+        "-g",
+        "-Wall",
+        "-Wfatal-errors",
+        "-fsanitize=address,undefined",
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}"
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "type": "shell",
+      "label": "g++ build (ACL, optimization)",
+      "command": "/usr/bin/g++",
+      "args": [
+        "-std=c++17",
+        "-Wall",
+        "-Wfatal-errors",
+        "-I${workspaceFolder}/ac-library",
+        "-O2",
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}"
+      ],
+      "options": {
+        "cwd": "/usr/bin"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "type": "shell",
+      "label": "clang build (ACL, optimization)",
+      "command": "/usr/bin/clang++",
+      "args": [
+        "-std=c++17",
+        "-Wall",
+        "-Wfatal-errors",
+        "-I${workspaceFolder}/ac-library",
+        "-O2",
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}"
+      ],
+      "options": {
+        "cwd": "/usr/bin"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "type": "shell",
+      "label": "Expand",
+      "command": "/usr/bin/python3",
+      "args": [
+        "${workspaceFolder}/ac-library/expander.py",
+        "--lib",
+        "${workspaceFolder}/ac-library",
+        "${file}"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
 }
