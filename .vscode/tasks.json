@@ -110,7 +110,7 @@
     },
     {
       "type": "shell",
-      "label": "clang build (ACL, optimization)",
+      "label": "clang++ build (ACL, optimization)",
       "command": "/usr/bin/clang++",
       "args": [
         "-std=c++17",
