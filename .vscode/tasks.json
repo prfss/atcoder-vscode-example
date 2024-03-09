@@ -6,7 +6,7 @@
       "label": "g++ build with AtCoder Library",
       "command": "/usr/bin/g++",
       "args": [
-        "-std=gnu++17",
+        "-std=gnu++2b",
         "-g",
         "-Wall",
         "-Wfatal-errors",
@@ -27,7 +27,7 @@
       "label": "g++ build with AtCoder Library (DEBUG)",
       "command": "/usr/bin/g++",
       "args": [
-        "-std=gnu++17",
+        "-std=gnu++2b",
         "-DDEBUG",
         "-g",
         "-Wall",
@@ -49,7 +49,7 @@
       "label": "g++ build",
       "command": "/usr/bin/g++",
       "args": [
-        "-std=gnu++17",
+        "-std=gnu++2b",
         "-g",
         "-Wall",
         "-Wfatal-errors",
@@ -69,7 +69,7 @@
       "label": "g++ build (DEBUG)",
       "command": "/usr/bin/g++",
       "args": [
-        "-std=gnu++17",
+        "-std=gnu++2b",
         "-DDEBUG",
         "-g",
         "-Wall",
@@ -90,30 +90,7 @@
       "label": "g++ build (ACL, optimization)",
       "command": "/usr/bin/g++",
       "args": [
-        "-std=c++17",
-        "-Wall",
-        "-Wfatal-errors",
-        "-I${workspaceFolder}/ac-library",
-        "-O2",
-        "${file}",
-        "-o",
-        "${fileDirname}/${fileBasenameNoExtension}"
-      ],
-      "options": {
-        "cwd": "/usr/bin"
-      },
-      "problemMatcher": [],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
-    },
-    {
-      "type": "shell",
-      "label": "clang++ build (ACL, optimization)",
-      "command": "/usr/bin/clang++",
-      "args": [
-        "-std=c++17",
+        "-std=gnu++2b",
         "-Wall",
         "-Wfatal-errors",
         "-I${workspaceFolder}/ac-library",
